@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Hangman Game</title>
+</head>
+<body>
+  <h1>Hangman Game - Vanilla JS Project</h1>
+
+  <!-- Game hits badge -->
+  <p align="left">
+    <a href="https://your-username.github.io/hangman-game/" target="_blank">
+      <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fyour-username.github.io%2Fhangman-game%2F&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=HANGMAN+GAME+HITS&edge_flat=false" alt="Hangman Game Hits"/>
+    </a>
+  </p>
+
+  <p>Find the hidden word - Enter a letter on your keyboard</p>
+
+  <div class="game-container">
+    <svg height="250" width="200" class="figure-container">
+      <!-- Rod -->
+      <line x1="60" y1="20" x2="140" y2="20" />
+      <line x1="140" y1="20" x2="140" y2="50" />
+      <line x1="60" y1="20" x2="60" y2="230" />
+      <line x1="20" y1="230" x2="100" y2="230" />
+
+      <!-- Head -->
+      <circle cx="140" cy="70" r="20" class="figure-part" />
+      <!-- Body -->
+      <line x1="140" y1="90" x2="140" y2="150" class="figure-part" />
+      <!-- Arms -->
+      <line x1="140" y1="120" x2="120" y2="100" class="figure-part" />
+      <line x1="140" y1="120" x2="160" y2="100" class="figure-part" />
+      <!-- Legs -->
+      <line x1="140" y1="150" x2="120" y2="180" class="figure-part" />
+      <line x1="140" y1="150" x2="160" y2="180" class="figure-part" />
+    </svg>
+
+    <div class="wrong-letters-container">
+      <div id="wrong-letters"></div>
+    </div>
+
+    <div class="word" id="word"></div>
+  </div>
+
+  <!-- Popup for final message -->
+  <div class="popup-container" id="popup-container">
+    <div class="popup">
+      <h2 id="final-message"></h2>
+      <h3 id="final-message-reveal-word"></h3>
+      <button id="play-button">Play Again</button>
+    </div>
+  </div>
+
+  <!-- Notification for repeated letters -->
+  <div class="notification-container" id="notification-container">
+    <p>You have already entered this letter</p>
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
