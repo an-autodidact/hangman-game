@@ -1,5 +1,5 @@
 ## Hangman Game
-null
+null.06
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fan-autodidact.github.io%2Fhangman-game%2F&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=HANGMAN+GAME+HITS&edge_flat=false)](https://an-autodidact.github.io/hangman-game/)
 
 A simple **Hangman Game** built with **Vanilla JavaScript, HTML, and CSS**.
